@@ -4,7 +4,8 @@
   "description": "Projekt przygotowany do szkolenia zespołu z podstaw TS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc --watch"
   },
   "repository": {
     "type": "git",
