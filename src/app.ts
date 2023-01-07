@@ -35,10 +35,7 @@ interface Survey<T extends Answer | Array<number>> {
 
 class MySurve implements Survey<Answer> {
   queastions: Question<Answer>[] | null = null
-  add = (
-    input: Question<//Podstawowe typy
-    Answer>,
-  ) => {
+  add = (input: Question<Answer>) => {
     this.queastions = new Array<Question<Answer>>()
     this.queastions.push({
       answer: 'sd',
@@ -46,3 +43,39 @@ class MySurve implements Survey<Answer> {
     })
   }
 }
+
+//Decorator
+
+function first() {
+  console.log('first(): factory evaluated')
+  return function (
+    target: any,
+    propertyKey: string,
+    descriptor: PropertyDescriptor,
+  ) {
+    console.log('first(): called')
+  }
+}
+
+function second() {
+  console.log('second(): factory evaluated')
+  return function (
+    target: any,
+    propertyKey: string,
+    descriptor: PropertyDescriptor,
+  ) {
+    console.log('second(): called')
+  }
+}
+
+class A {
+  @first()
+  @second()
+  test() {
+    console.log('Test')
+  }
+}
+
+const w: A = new A()
+
+console.log(w.test())

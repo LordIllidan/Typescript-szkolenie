@@ -4,6 +4,7 @@
         "outDir": "./dist",
         "strict": true,
         "allowJs": false,
-        "target": "ES2021"
+        "target": "ES2021",
+        "experimentalDecorators": true
     }
 }
