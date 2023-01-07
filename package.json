@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/LordIllidan/Typescript-szkolenie/issues"
   },
-  "homepage": "https://github.com/LordIllidan/Typescript-szkolenie#readme"
+  "homepage": "https://github.com/LordIllidan/Typescript-szkolenie#readme",
+  "dependencies": {
+    "prettier": "2.8.2"
+  }
 }
