@@ -1,0 +1,20 @@
+{
+  "name": "Typescript-szkolenie",
+  "version": "1.0.0",
+  "description": "Projekt przygotowany do szkolenia zespołu z podstaw TS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LordIllidan/Typescript-szkolenie.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LordIllidan/Typescript-szkolenie/issues"
+  },
+  "homepage": "https://github.com/LordIllidan/Typescript-szkolenie#readme"
+}
