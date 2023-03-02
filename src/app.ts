@@ -1,3 +1,5 @@
+import { www } from './test'
+
 console.log('Test')
 
 //Podstawowe typy
@@ -16,6 +18,8 @@ add(Number(input1?.value), 10)
 
 //union type
 const log = (a1: number | string) => console.log(`Wartość ${a1}`)
+
+let k = 1010
 
 log(10)
 log('Test')
@@ -79,3 +83,29 @@ class A {
 const w: A = new A()
 
 console.log(w.test())
+
+//enum
+enum Direction {
+  Up,
+  Down,
+  Left,
+  Right,
+}
+
+type mA = 's'
+
+type Arguments<T> = T extends mA ? mA : never
+type Return<T> = T extends mA ? mA : never
+
+type Z = 'ss'
+
+let a: mA = 's'
+
+let m: Arguments<mA> = a
+//let m1: Arguments<Z> = "ss"
+
+// const parser = z.object({
+//   a: z.string().max(10),
+// })
+
+console.log(www, '')
